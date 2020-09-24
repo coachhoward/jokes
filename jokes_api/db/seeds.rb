@@ -15,4 +15,4 @@
     )
   end
 
-puts "Seeded database"
+puts "Seeded database w/faker"
