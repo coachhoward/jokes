@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
     def index
-        render json: { status: 200, message: "Noticeboard API" }
+        render json: { status: 200, message: "Welcome to DadJokes API" }
         
     end
 end
