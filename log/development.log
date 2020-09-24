@@ -492,3 +492,28 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 174)
 
 
+Started POST "/jokes" for ::1 at 2020-09-24 17:30:54 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JokesController#create as HTML
+  Parameters: {"author"=>"Chris", "content"=>"Because he had a hole in one.", "title"=>"Why did the golfer change pants?", "joke"=>{"title"=>"Why did the golfer change pants?", "author"=>"Chris", "content"=>"Because he had a hole in one."}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/jokes_controller.rb:20:in `create'
+  [1m[36mJoke Create (8.5ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Why did the golfer change pants?"], ["author", "Chris"], ["content", "Because he had a hole in one."], ["created_at", "2020-09-24 21:30:54.364556"], ["updated_at", "2020-09-24 21:30:54.364556"]]
+  ↳ app/controllers/jokes_controller.rb:20:in `create'
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/jokes_controller.rb:20:in `create'
+Completed 201 Created in 50ms (Views: 2.3ms | ActiveRecord: 26.8ms | Allocations: 6010)
+
+
+Started POST "/jokes" for ::1 at 2020-09-24 17:31:40 -0400
+Processing by JokesController#create as HTML
+  Parameters: {"author"=>"Anonymous ", "title"=>"What is the hardest thing about riding a bike?", "content"=>"The sidewalk.", "joke"=>{"title"=>"What is the hardest thing about riding a bike?", "author"=>"Anonymous ", "content"=>"The sidewalk."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/jokes_controller.rb:20:in `create'
+  [1m[36mJoke Create (2.7ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "What is the hardest thing about riding a bike?"], ["author", "Anonymous "], ["content", "The sidewalk."], ["created_at", "2020-09-24 21:31:40.437165"], ["updated_at", "2020-09-24 21:31:40.437165"]]
+  ↳ app/controllers/jokes_controller.rb:20:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/jokes_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.4ms | ActiveRecord: 3.2ms | Allocations: 2559)
+
+
