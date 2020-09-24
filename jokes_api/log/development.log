@@ -341,3 +341,54 @@ Processing by JokesController#index as HTML
 Completed 200 OK in 33ms (Views: 23.0ms | ActiveRecord: 8.2ms | Allocations: 17040)
 
 
+Started GET "/jokes" for ::1 at 2020-09-24 12:42:34 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JokesController#index as HTML
+  [1m[36mJoke Load (0.9ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 19.9ms | ActiveRecord: 7.7ms | Allocations: 17040)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 12:46:02 -0400
+Processing by JokesController#index as */*
+  [1m[36mJoke Load (1.3ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 1.3ms | Allocations: 13075)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 12:46:19 -0400
+Processing by JokesController#index as */*
+  [1m[36mJoke Load (0.6ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.6ms | Allocations: 13073)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 12:46:51 -0400
+Processing by JokesController#index as */*
+  [1m[36mJoke Load (1.6ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 1.6ms | Allocations: 13074)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 12:47:01 -0400
+Processing by JokesController#index as */*
+  [1m[36mJoke Load (0.5ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.5ms | Allocations: 13073)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 12:48:11 -0400
+Processing by JokesController#index as */*
+  [1m[36mJoke Load (4.4ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 4.4ms | Allocations: 13056)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 12:55:49 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JokesController#index as */*
+  [1m[36mJoke Load (1.1ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 21.9ms | ActiveRecord: 7.5ms | Allocations: 17042)
+
+
