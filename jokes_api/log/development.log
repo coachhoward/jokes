@@ -15,3 +15,329 @@ Migrating to CreateJokes (20200924144940)
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4345871144262459000)[0m
   [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-09-24 11:13:40 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/chrishoward/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/chrishoward/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.8ms | Allocations: 409)
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2254)
+
+
+Started GET "/jokes" for ::1 at 2020-09-24 11:14:04 -0400
+Processing by JokesController#index as HTML
+  [1m[36mJoke Load (0.7ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 2.3ms | ActiveRecord: 3.0ms | Allocations: 1692)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (1.7ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Microdosing normcore polaroid kogi ennui wolf photo booth you probably haven't heard of them tumblr."], ["author", "Kentucky sons"], ["content", "Tempora in sunt. Architecto omnis eum. Qui sit qui."], ["created_at", "2020-09-24 15:15:17.308094"], ["updated_at", "2020-09-24 15:15:17.308094"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "90's humblebrag pop-up mixtape godard swag williamsburg polaroid freegan selvage stumptown."], ["author", "Louisiana wolves"], ["content", "Amet magni est. Rem nobis facere. Et ut quos."], ["created_at", "2020-09-24 15:15:17.315299"], ["updated_at", "2020-09-24 15:15:17.315299"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pitchfork offal viral butcher art party vice whatever knausgaard five dollar toast trust fund pug."], ["author", "Texas monkeys"], ["content", "Asperiores placeat nemo. Totam perspiciatis doloribus. Id nemo saepe."], ["created_at", "2020-09-24 15:15:17.320380"], ["updated_at", "2020-09-24 15:15:17.320380"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "90's letterpress wayfarers hammock beard 3 wolf moon chartreuse yr listicle mustache polaroid before they sold out."], ["author", "South Dakota spirits"], ["content", "Sit facere quos. Assumenda quis amet. Ipsum aliquam a."], ["created_at", "2020-09-24 15:15:17.324431"], ["updated_at", "2020-09-24 15:15:17.324431"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Chicharrones mumblecore selfies jean shorts tofu vinegar small batch cold-pressed seitan."], ["author", "New York vampires"], ["content", "Sunt ipsam quisquam. Non et eaque. Culpa eum praesentium."], ["created_at", "2020-09-24 15:15:17.334239"], ["updated_at", "2020-09-24 15:15:17.334239"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Asymmetrical hammock gluten-free fingerstache helvetica 8-bit normcore sartorial."], ["author", "Indiana lycanthropes"], ["content", "Nulla autem labore. Voluptas aut tenetur. Saepe cupiditate suscipit."], ["created_at", "2020-09-24 15:15:17.338615"], ["updated_at", "2020-09-24 15:15:17.338615"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Bicycle rights cred roof tumblr pickled gastropub meggings tacos trust fund asymmetrical."], ["author", "Alaska elves"], ["content", "Excepturi aut a. Similique qui neque. Qui sed eos."], ["created_at", "2020-09-24 15:15:17.343043"], ["updated_at", "2020-09-24 15:15:17.343043"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Small batch skateboard vhs truffaut helvetica put a bird on it five dollar toast vinyl farm-to-table aesthetic cred."], ["author", "Alaska worshipers"], ["content", "Voluptates aliquid nemo. Eum et voluptas. Qui autem qui."], ["created_at", "2020-09-24 15:15:17.347332"], ["updated_at", "2020-09-24 15:15:17.347332"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Bushwick swag austin stumptown meh tousled hashtag readymade fixie vhs green juice."], ["author", "Texas horses"], ["content", "At quibusdam est. Molestiae amet iste. Fugiat incidunt saepe."], ["created_at", "2020-09-24 15:15:17.353542"], ["updated_at", "2020-09-24 15:15:17.353542"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Keffiyeh pabst kickstarter truffaut thundercats craft beer vhs waistcoat asymmetrical paleo."], ["author", "Minnesota frogs"], ["content", "Reiciendis est cupiditate. Vel delectus veniam. Aut consequuntur quia."], ["created_at", "2020-09-24 15:15:17.358190"], ["updated_at", "2020-09-24 15:15:17.358190"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Lo-fi green juice sustainable normcore direct trade art party dreamcatcher meh whatever heirloom."], ["author", "Ohio birds"], ["content", "Et eius velit. Inventore iure et. Iure ut eaque."], ["created_at", "2020-09-24 15:15:17.361745"], ["updated_at", "2020-09-24 15:15:17.361745"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Cornhole yr butcher selfies cray organic kickstarter ennui pug blog bicycle rights."], ["author", "North Dakota geese"], ["content", "Dolorum non est. Tempora quae ad. Ut expedita error."], ["created_at", "2020-09-24 15:15:17.365099"], ["updated_at", "2020-09-24 15:15:17.365099"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Cronut dreamcatcher scenester goth polaroid tofu actually loko twee church-key listicle roof."], ["author", "Pennsylvania enchanters"], ["content", "Sed placeat nobis. Esse ducimus at. Quis quas rerum."], ["created_at", "2020-09-24 15:15:17.369220"], ["updated_at", "2020-09-24 15:15:17.369220"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Readymade 90's twee sriracha selvage fanny pack occupy ennui."], ["author", "Wisconsin gooses"], ["content", "Cupiditate fugiat maxime. Ut ut et. Qui laboriosam autem."], ["created_at", "2020-09-24 15:15:17.373311"], ["updated_at", "2020-09-24 15:15:17.373311"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Yolo trust fund thundercats next level butcher offal pop-up cronut mustache pitchfork blog banh mi."], ["author", "South Carolina kangaroos"], ["content", "Unde minima et. Et eum quisquam. Eos optio aut."], ["created_at", "2020-09-24 15:15:17.377204"], ["updated_at", "2020-09-24 15:15:17.377204"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Wayfarers freegan post-ironic ethical retro sustainable etsy echo."], ["author", "Maine elephants"], ["content", "Et excepturi debitis. Aut architecto voluptas. Aperiam error sint."], ["created_at", "2020-09-24 15:15:17.381789"], ["updated_at", "2020-09-24 15:15:17.381789"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Health single-origin coffee brunch kale chips bushwick salvia thundercats meditation chicharrones cray yr."], ["author", "Missouri conspirators"], ["content", "Ea et amet. Nesciunt vitae amet. Et est sapiente."], ["created_at", "2020-09-24 15:15:17.385755"], ["updated_at", "2020-09-24 15:15:17.385755"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Waistcoat viral twee everyday hella helvetica poutine leggings venmo franzen."], ["author", "Connecticut zombies"], ["content", "Id sit consequuntur. Voluptatibus qui maiores. Ut aut est."], ["created_at", "2020-09-24 15:15:17.390023"], ["updated_at", "2020-09-24 15:15:17.390023"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Chicharrones kinfolk pop-up skateboard pinterest salvia tofu letterpress chia williamsburg stumptown plaid."], ["author", "Arizona pigs"], ["content", "Ad dolores illo. Culpa non officiis. In enim laborum."], ["created_at", "2020-09-24 15:15:17.393944"], ["updated_at", "2020-09-24 15:15:17.393944"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Blog you probably haven't heard of them tofu paleo xoxo humblebrag chartreuse fingerstache goth park vinyl pour-over wes anderson."], ["author", "Utah vampires"], ["content", "Repudiandae voluptatum quas. Ad minima suscipit. Aliquid in unde."], ["created_at", "2020-09-24 15:15:17.398069"], ["updated_at", "2020-09-24 15:15:17.398069"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Authentic keytar yuccie aesthetic tote bag pabst intelligentsia pour-over."], ["author", "North Carolina fishes"], ["content", "Voluptas at sed. Nihil quaerat sit. Qui unde dolores."], ["created_at", "2020-09-24 15:15:17.402681"], ["updated_at", "2020-09-24 15:15:17.402681"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Cardigan kickstarter single-origin coffee next level 90's art party plaid mlkshk."], ["author", "Georgia oxen"], ["content", "Et nihil quos. Dolorem quasi enim. Deleniti velit optio."], ["created_at", "2020-09-24 15:15:17.406882"], ["updated_at", "2020-09-24 15:15:17.406882"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pop-up seitan cliche shoreditch farm-to-table poutine cred vegan."], ["author", "California lycanthropes"], ["content", "Id inventore aut. Nesciunt veniam rerum. Est unde animi."], ["created_at", "2020-09-24 15:15:17.410951"], ["updated_at", "2020-09-24 15:15:17.410951"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Whatever blue bottle green juice tacos banjo cardigan vinyl kitsch mixtape vhs."], ["author", "West Virginia spirits"], ["content", "Blanditiis exercitationem eius. Qui magnam et. Ut veniam laboriosam."], ["created_at", "2020-09-24 15:15:17.414988"], ["updated_at", "2020-09-24 15:15:17.414988"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Whatever synth venmo bespoke church-key pitchfork fanny pack cold-pressed salvia slow-carb crucifix post-ironic thundercats."], ["author", "Missouri dwarves"], ["content", "Sit maxime voluptatem. Necessitatibus sit est. Voluptas ea nam."], ["created_at", "2020-09-24 15:15:17.418834"], ["updated_at", "2020-09-24 15:15:17.418834"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Banjo shoreditch yolo selvage yr salvia direct trade green juice tofu small batch."], ["author", "Rhode Island worshipers"], ["content", "Tenetur dolor repellendus. Nihil saepe impedit. Ipsum atque sint."], ["created_at", "2020-09-24 15:15:17.422773"], ["updated_at", "2020-09-24 15:15:17.422773"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tofu retro everyday godard cronut polaroid occupy leggings."], ["author", "Indiana goats"], ["content", "Delectus corrupti error. Consequatur incidunt ipsum. Dolor veniam et."], ["created_at", "2020-09-24 15:15:17.427776"], ["updated_at", "2020-09-24 15:15:17.427776"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Selvage selfies skateboard poutine fixie microdosing street bicycle rights carry goth occupy tacos."], ["author", "New York ghosts"], ["content", "Enim aut a. Architecto dolor vitae. Omnis aut modi."], ["created_at", "2020-09-24 15:15:17.432539"], ["updated_at", "2020-09-24 15:15:17.432539"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Five dollar toast trust fund thundercats tote bag franzen listicle brunch actually."], ["author", "Rhode Island gooses"], ["content", "Libero sunt laudantium. Non error eius. Illum omnis voluptas."], ["created_at", "2020-09-24 15:15:17.436493"], ["updated_at", "2020-09-24 15:15:17.436493"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pbr&b lo-fi green juice polaroid mustache literally leggings selvage salvia street blog microdosing drinking."], ["author", "Nevada zombies"], ["content", "Quas dolorem esse. Dolorum libero dolorem. Aliquam eos maiores."], ["created_at", "2020-09-24 15:15:17.440835"], ["updated_at", "2020-09-24 15:15:17.440835"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Echo meditation hammock bespoke pork belly authentic sriracha post-ironic food truck quinoa photo booth semiotics lomo."], ["author", "Michigan goats"], ["content", "Corporis perferendis ratione. Laboriosam id incidunt. Ipsum provident sed."], ["created_at", "2020-09-24 15:15:17.444590"], ["updated_at", "2020-09-24 15:15:17.444590"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Neutra fanny pack cred cornhole echo cleanse direct trade xoxo mustache banjo loko thundercats."], ["author", "North Carolina kangaroos"], ["content", "Omnis eos saepe. Quasi est nemo. Voluptatem sint doloremque."], ["created_at", "2020-09-24 15:15:17.448919"], ["updated_at", "2020-09-24 15:15:17.448919"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Butcher pabst skateboard craft beer pinterest marfa selfies drinking meh tumblr actually."], ["author", "Alaska enchanters"], ["content", "Omnis odio porro. Sed tenetur consequuntur. Aspernatur est soluta."], ["created_at", "2020-09-24 15:15:17.453307"], ["updated_at", "2020-09-24 15:15:17.453307"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.6ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Banh mi cray master kale chips pabst poutine kombucha yuccie direct trade farm-to-table offal crucifix normcore."], ["author", "Kentucky spirits"], ["content", "Fugiat mollitia laudantium. Corrupti laborum eum. Quaerat aut eos."], ["created_at", "2020-09-24 15:15:17.456953"], ["updated_at", "2020-09-24 15:15:17.456953"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Put a bird on it kickstarter readymade irony 3 wolf moon freegan vhs polaroid vegan."], ["author", "New Jersey spiders"], ["content", "Blanditiis adipisci quaerat. Ut officia explicabo. Sunt eveniet quo."], ["created_at", "2020-09-24 15:15:17.462232"], ["updated_at", "2020-09-24 15:15:17.462232"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Ennui literally leggings readymade art party fingerstache humblebrag salvia freegan plaid."], ["author", "Pennsylvania birds"], ["content", "Hic quam officia. Sunt officia voluptas. Ea asperiores autem."], ["created_at", "2020-09-24 15:15:17.468084"], ["updated_at", "2020-09-24 15:15:17.468084"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.7ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Crucifix direct trade vegan biodiesel flexitarian schlitz goth ugh waistcoat bicycle rights."], ["author", "Iowa conspirators"], ["content", "Nesciunt voluptatem hic. Aut omnis aut. Est aliquid expedita."], ["created_at", "2020-09-24 15:15:17.472073"], ["updated_at", "2020-09-24 15:15:17.472073"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Selfies polaroid 90's health mustache artisan taxidermy truffaut art party before they sold out 8-bit kitsch."], ["author", "West Virginia horses"], ["content", "Eius assumenda magnam. Blanditiis et voluptatem. Praesentium aspernatur id."], ["created_at", "2020-09-24 15:15:17.476508"], ["updated_at", "2020-09-24 15:15:17.476508"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pickled thundercats typewriter whatever wolf locavore hammock viral flannel before they sold out."], ["author", "Rhode Island owls"], ["content", "Eos omnis qui. Et possimus nesciunt. Id quidem quod."], ["created_at", "2020-09-24 15:15:17.480861"], ["updated_at", "2020-09-24 15:15:17.480861"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Portland retro listicle quinoa sriracha lomo squid tote bag ugh knausgaard park banjo single-origin coffee."], ["author", "Pennsylvania zombies"], ["content", "Enim vel sit. Laudantium est necessitatibus. Saepe suscipit facilis."], ["created_at", "2020-09-24 15:15:17.485158"], ["updated_at", "2020-09-24 15:15:17.485158"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Truffaut brooklyn taxidermy iphone flannel humblebrag thundercats slow-carb organic squid."], ["author", "Pennsylvania dolphins"], ["content", "Et recusandae nesciunt. Est velit qui. Et maxime ducimus."], ["created_at", "2020-09-24 15:15:17.490520"], ["updated_at", "2020-09-24 15:15:17.490520"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Meggings iphone church-key 90's celiac bespoke keffiyeh plaid pop-up wolf helvetica raw denim."], ["author", "Rhode Island fishes"], ["content", "Perferendis nesciunt quas. Est ut sit. Qui ea veritatis."], ["created_at", "2020-09-24 15:15:17.495038"], ["updated_at", "2020-09-24 15:15:17.495038"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Five dollar toast iphone actually kickstarter tumblr jean shorts sriracha bitters letterpress blue bottle truffaut."], ["author", "Tennessee geese"], ["content", "Ab sint amet. Architecto dolor nesciunt. Laborum voluptatem quaerat."], ["created_at", "2020-09-24 15:15:17.499033"], ["updated_at", "2020-09-24 15:15:17.499033"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Synth letterpress typewriter neutra kitsch drinking mlkshk flexitarian brunch."], ["author", "Arizona worshipers"], ["content", "Harum beatae consequatur. Ut praesentium ut. Vitae aliquam enim."], ["created_at", "2020-09-24 15:15:17.503040"], ["updated_at", "2020-09-24 15:15:17.503040"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Artisan godard master austin kogi mumblecore meggings blog single-origin coffee loko intelligentsia."], ["author", "New York gooses"], ["content", "Rerum earum quisquam. Quam sint ipsam. Placeat atque reiciendis."], ["created_at", "2020-09-24 15:15:17.507250"], ["updated_at", "2020-09-24 15:15:17.507250"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Squid yolo vinyl schlitz jean shorts celiac put a bird on it fanny pack."], ["author", "Washington goats"], ["content", "Id non recusandae. Ut quia est. Eveniet nulla sit."], ["created_at", "2020-09-24 15:15:17.511647"], ["updated_at", "2020-09-24 15:15:17.511647"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tilde yolo meh tattooed thundercats cray 90's pbr&b taxidermy kitsch."], ["author", "Vermont dragons"], ["content", "Hic illum autem. Explicabo aut odit. Aut quasi explicabo."], ["created_at", "2020-09-24 15:15:17.516018"], ["updated_at", "2020-09-24 15:15:17.516018"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Carry taxidermy single-origin coffee deep v tousled actually chia farm-to-table."], ["author", "Wyoming warlocks"], ["content", "Voluptatem earum quaerat. Pariatur ratione recusandae. Libero laborum sequi."], ["created_at", "2020-09-24 15:15:17.520362"], ["updated_at", "2020-09-24 15:15:17.520362"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Marfa cray mlkshk gluten-free tofu chambray flexitarian small batch direct trade farm-to-table meh knausgaard."], ["author", "Ohio dwarves"], ["content", "Dicta et est. Quidem excepturi doloribus. Sit iste in."], ["created_at", "2020-09-24 15:15:17.525107"], ["updated_at", "2020-09-24 15:15:17.525107"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sriracha portland food truck brooklyn crucifix sartorial cred knausgaard trust fund humblebrag try-hard echo single-origin coffee."], ["author", "Nebraska foxes"], ["content", "Eos placeat architecto. Corrupti illum nobis. Qui aliquid reprehenderit."], ["created_at", "2020-09-24 15:15:17.529413"], ["updated_at", "2020-09-24 15:15:17.529413"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Letterpress tilde blue bottle fashion axe meditation drinking bushwick meggings skateboard helvetica seitan actually."], ["author", "Connecticut whales"], ["content", "Qui culpa ut. Non velit reiciendis. Animi consequatur provident."], ["created_at", "2020-09-24 15:15:17.533188"], ["updated_at", "2020-09-24 15:15:17.533188"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Banh mi hashtag phlogiston banjo 3 wolf moon hammock health craft beer."], ["author", "Wyoming foxes"], ["content", "Velit rerum pariatur. Alias qui eum. Optio est iste."], ["created_at", "2020-09-24 15:15:17.537137"], ["updated_at", "2020-09-24 15:15:17.537137"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Selvage art party wes anderson mumblecore meditation tacos roof migas selfies aesthetic semiotics kitsch swag."], ["author", "North Carolina horses"], ["content", "Nesciunt quas iusto. Similique vel illum. Architecto perferendis impedit."], ["created_at", "2020-09-24 15:15:17.541431"], ["updated_at", "2020-09-24 15:15:17.541431"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Park chartreuse selvage brunch typewriter migas diy neutra umami."], ["author", "Virginia dwarves"], ["content", "Cumque est facere. Unde esse nam. Corrupti hic eos."], ["created_at", "2020-09-24 15:15:17.545733"], ["updated_at", "2020-09-24 15:15:17.545733"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Brooklyn beard cronut pbr&b venmo aesthetic normcore migas pour-over pork belly pabst butcher."], ["author", "Mississippi ogres"], ["content", "Nisi et beatae. Ullam sequi dolores. Magnam eos dolores."], ["created_at", "2020-09-24 15:15:17.550299"], ["updated_at", "2020-09-24 15:15:17.550299"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.6ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pour-over pinterest five dollar toast meggings drinking retro wayfarers keffiyeh etsy hammock readymade."], ["author", "Nevada oxen"], ["content", "Libero necessitatibus ad. Impedit et nulla. Quae dolorum eius."], ["created_at", "2020-09-24 15:15:17.554383"], ["updated_at", "2020-09-24 15:15:17.554383"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Twee hella synth gentrify celiac keytar paleo sartorial locavore."], ["author", "Michigan spiders"], ["content", "Quo veniam omnis. Eaque ut architecto. Alias incidunt qui."], ["created_at", "2020-09-24 15:15:17.560288"], ["updated_at", "2020-09-24 15:15:17.560288"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Meh small batch meditation next level cold-pressed viral park selfies pickled."], ["author", "Wyoming gnomes"], ["content", "Voluptatem optio et. Adipisci est maiores. Perferendis sint enim."], ["created_at", "2020-09-24 15:15:17.564152"], ["updated_at", "2020-09-24 15:15:17.564152"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Flexitarian schlitz put a bird on it mumblecore meh organic typewriter +1 salvia xoxo pickled ugh."], ["author", "Wisconsin zebras"], ["content", "Dolorum et enim. Consequatur sunt et. Reprehenderit ad dolore."], ["created_at", "2020-09-24 15:15:17.568144"], ["updated_at", "2020-09-24 15:15:17.568144"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Marfa deep v thundercats pour-over cliche butcher fanny pack vinegar godard shoreditch."], ["author", "Montana cats"], ["content", "Rerum natus dolores. Maxime explicabo molestiae. Adipisci error et."], ["created_at", "2020-09-24 15:15:17.572596"], ["updated_at", "2020-09-24 15:15:17.572596"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Vinegar butcher pug gentrify goth cred meditation flannel."], ["author", "New Hampshire sheep"], ["content", "Quia nesciunt quo. Qui voluptatum ut. Sed molestiae quisquam."], ["created_at", "2020-09-24 15:15:17.576569"], ["updated_at", "2020-09-24 15:15:17.576569"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tacos kogi truffaut banjo five dollar toast letterpress humblebrag butcher street selfies squid cred."], ["author", "Georgia giants"], ["content", "Id ut mollitia. Architecto impedit et. Corporis eum labore."], ["created_at", "2020-09-24 15:15:17.580799"], ["updated_at", "2020-09-24 15:15:17.580799"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.6ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Ennui wes anderson plaid narwhal readymade 90's tofu five dollar toast semiotics."], ["author", "Alabama zebras"], ["content", "Placeat qui reprehenderit. Dolor rem voluptatem. Dicta dolores quia."], ["created_at", "2020-09-24 15:15:17.585281"], ["updated_at", "2020-09-24 15:15:17.585281"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Small batch master sriracha fingerstache humblebrag portland tattooed chartreuse 90's squid neutra."], ["author", "Utah elephants"], ["content", "Voluptatibus autem natus. Sed quia corporis. Quis voluptas molestiae."], ["created_at", "2020-09-24 15:15:17.590886"], ["updated_at", "2020-09-24 15:15:17.590886"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Paleo pitchfork vinyl before they sold out five dollar toast whatever gastropub beard actually cardigan authentic muggle magic."], ["author", "North Dakota pigs"], ["content", "Porro qui eveniet. Inventore ex sit. Iste voluptas est."], ["created_at", "2020-09-24 15:15:17.595220"], ["updated_at", "2020-09-24 15:15:17.595220"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Goth hella +1 gluten-free pork belly put a bird on it fixie fingerstache health."], ["author", "Wisconsin owls"], ["content", "Et molestiae dolor. Tempora sed soluta. At illum quis."], ["created_at", "2020-09-24 15:15:17.599483"], ["updated_at", "2020-09-24 15:15:17.599483"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mumblecore wayfarers 8-bit poutine food truck iphone cleanse craft beer tumblr etsy health messenger bag."], ["author", "Virginia monkeys"], ["content", "Enim voluptatem dolore. Iste perferendis dignissimos. Doloribus dolores velit."], ["created_at", "2020-09-24 15:15:17.605907"], ["updated_at", "2020-09-24 15:15:17.605907"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (1.1ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Salvia meh vegan +1 vinyl put a bird on it hashtag knausgaard kitsch normcore ennui semiotics cred."], ["author", "Florida cattle"], ["content", "Dicta est pariatur. Architecto ullam hic. Laboriosam suscipit temporibus."], ["created_at", "2020-09-24 15:15:17.610206"], ["updated_at", "2020-09-24 15:15:17.610206"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Everyday wayfarers loko cred meh pitchfork irony retro disrupt knausgaard."], ["author", "Kansas dwarves"], ["content", "Aut eos aut. Sunt doloremque amet. Molestiae voluptatem quis."], ["created_at", "2020-09-24 15:15:17.615276"], ["updated_at", "2020-09-24 15:15:17.615276"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Art party pinterest shoreditch fashion axe meggings scenester chicharrones carry kickstarter quinoa."], ["author", "New Jersey oxen"], ["content", "Dolorum qui voluptatem. Nesciunt error maiores. Deserunt est dolores."], ["created_at", "2020-09-24 15:15:17.620082"], ["updated_at", "2020-09-24 15:15:17.620082"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Leggings food truck you probably haven't heard of them ugh narwhal selvage butcher bitters franzen tote bag."], ["author", "Ohio penguins"], ["content", "Libero quas ea. Impedit quia qui. Harum quam rem."], ["created_at", "2020-09-24 15:15:17.624535"], ["updated_at", "2020-09-24 15:15:17.624535"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Art party yr 8-bit humblebrag meditation mumblecore semiotics flexitarian."], ["author", "Florida monkeys"], ["content", "Sed autem esse. Illo suscipit voluptatem. Est incidunt aut."], ["created_at", "2020-09-24 15:15:17.629500"], ["updated_at", "2020-09-24 15:15:17.629500"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Craft beer everyday ennui kale chips salvia hella iphone bicycle rights shoreditch pinterest."], ["author", "Arizona elves"], ["content", "Aut consequatur vero. Consequatur qui ipsam. Commodi expedita rerum."], ["created_at", "2020-09-24 15:15:17.634499"], ["updated_at", "2020-09-24 15:15:17.634499"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Meggings health waistcoat polaroid chillwave venmo everyday austin shoreditch kickstarter pabst 3 wolf moon."], ["author", "Kentucky penguins"], ["content", "Quaerat cumque et. Suscipit est consequatur. Dolores nemo reiciendis."], ["created_at", "2020-09-24 15:15:17.638747"], ["updated_at", "2020-09-24 15:15:17.638747"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Chicharrones tilde gastropub pug artisan gluten-free umami pbr&b venmo vegan."], ["author", "Washington werewolves"], ["content", "Asperiores perspiciatis minus. Sed ad magnam. Commodi quia sunt."], ["created_at", "2020-09-24 15:15:17.643387"], ["updated_at", "2020-09-24 15:15:17.643387"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Flannel bushwick cred pinterest 8-bit iphone kitsch cornhole."], ["author", "Nevada bees"], ["content", "Qui accusamus soluta. Aut dolores eos. Architecto dolorem inventore."], ["created_at", "2020-09-24 15:15:17.647469"], ["updated_at", "2020-09-24 15:15:17.647469"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Scenester intelligentsia flannel lo-fi messenger bag franzen mumblecore tacos skateboard vice fanny pack."], ["author", "Colorado witches"], ["content", "Omnis tempore quisquam. Officiis ut aliquam. Itaque velit earum."], ["created_at", "2020-09-24 15:15:17.661211"], ["updated_at", "2020-09-24 15:15:17.661211"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.5ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Street bicycle rights leggings selvage farm-to-table distillery scenester intelligentsia."], ["author", "Nevada goats"], ["content", "Non omnis cumque. Fugit dignissimos rerum. Corrupti vel ut."], ["created_at", "2020-09-24 15:15:17.665249"], ["updated_at", "2020-09-24 15:15:17.665249"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Craft beer humblebrag sustainable etsy slow-carb loko food truck pbr&b."], ["author", "Nevada dwarves"], ["content", "Tenetur eveniet ut. Asperiores vero excepturi. Earum eum unde."], ["created_at", "2020-09-24 15:15:17.670340"], ["updated_at", "2020-09-24 15:15:17.670340"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Microdosing 90's waistcoat asymmetrical jean shorts knausgaard butcher fixie."], ["author", "Maryland warlocks"], ["content", "Delectus laboriosam dolores. Animi repellat assumenda. Eos nulla voluptates."], ["created_at", "2020-09-24 15:15:17.674523"], ["updated_at", "2020-09-24 15:15:17.674523"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "+1 slow-carb ethical asymmetrical brunch ennui bespoke paleo raw denim narwhal plaid."], ["author", "Georgia vampires"], ["content", "Magni reprehenderit architecto. Praesentium a eum. Eum est molestiae."], ["created_at", "2020-09-24 15:15:17.678264"], ["updated_at", "2020-09-24 15:15:17.678264"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Fixie artisan meditation crucifix quinoa meggings vinegar 8-bit street selfies sustainable five dollar toast."], ["author", "Oregon elves"], ["content", "Sunt qui distinctio. Ex est quia. Nihil quos sit."], ["created_at", "2020-09-24 15:15:17.682066"], ["updated_at", "2020-09-24 15:15:17.682066"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Fashion axe bushwick chambray next level +1 muggle magic dreamcatcher 8-bit wayfarers drinking master."], ["author", "Hawaii owls"], ["content", "Expedita maxime dolores. Cum sit nobis. Perspiciatis nihil ab."], ["created_at", "2020-09-24 15:15:17.685730"], ["updated_at", "2020-09-24 15:15:17.685730"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Street dreamcatcher polaroid beard mixtape vinyl asymmetrical letterpress semiotics bushwick flannel put a bird on it."], ["author", "California zombies"], ["content", "Placeat iusto et. Ipsa voluptatum molestias. Illum dolore suscipit."], ["created_at", "2020-09-24 15:15:17.690044"], ["updated_at", "2020-09-24 15:15:17.690044"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tattooed raw denim tousled taxidermy yuccie truffaut brooklyn typewriter everyday meditation vhs hella."], ["author", "Virginia sorcerors"], ["content", "Facilis quo necessitatibus. Et quasi a. Minima ad laudantium."], ["created_at", "2020-09-24 15:15:17.695210"], ["updated_at", "2020-09-24 15:15:17.695210"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Asymmetrical pinterest synth 90's small batch muggle magic brooklyn cronut."], ["author", "Delaware bees"], ["content", "Perspiciatis consequatur nulla. Rerum nihil ipsa. Nam nulla sit."], ["created_at", "2020-09-24 15:15:17.699808"], ["updated_at", "2020-09-24 15:15:17.699808"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tumblr ennui chia slow-carb lumbersexual try-hard shabby chic humblebrag knausgaard brunch."], ["author", "Nebraska dogs"], ["content", "Minima dolor voluptatibus. Nostrum quo debitis. Quam blanditiis dolores."], ["created_at", "2020-09-24 15:15:17.703982"], ["updated_at", "2020-09-24 15:15:17.703982"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Occupy phlogiston ramps cray polaroid vhs you probably haven't heard of them celiac."], ["author", "Utah foes"], ["content", "Sed dolores error. Quis et ea. Qui itaque et."], ["created_at", "2020-09-24 15:15:17.708251"], ["updated_at", "2020-09-24 15:15:17.708251"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Meh pop-up vegan fanny pack sustainable etsy tumblr chia 8-bit."], ["author", "Utah conspirators"], ["content", "Delectus quaerat soluta. Recusandae ipsa tempora. Voluptatibus in omnis."], ["created_at", "2020-09-24 15:15:17.712209"], ["updated_at", "2020-09-24 15:15:17.712209"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Squid church-key butcher slow-carb keytar pug craft beer leggings."], ["author", "Missouri gnomes"], ["content", "Qui alias sed. Laborum itaque maxime. Atque eum quia."], ["created_at", "2020-09-24 15:15:17.716185"], ["updated_at", "2020-09-24 15:15:17.716185"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tumblr offal normcore 8-bit pork belly cardigan brunch kogi poutine five dollar toast viral vegan bespoke."], ["author", "Massachusetts horses"], ["content", "Quia vel at. Eum enim pariatur. Tenetur dolor voluptates."], ["created_at", "2020-09-24 15:15:17.720332"], ["updated_at", "2020-09-24 15:15:17.720332"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Beard ugh whatever vhs goth tumblr vice drinking next level."], ["author", "Hawaii bears"], ["content", "Possimus perspiciatis nobis. Atque adipisci porro. Numquam et odio."], ["created_at", "2020-09-24 15:15:17.724929"], ["updated_at", "2020-09-24 15:15:17.724929"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Cred marfa meditation truffaut pop-up meggings jean shorts chicharrones mlkshk kitsch."], ["author", "Delaware vampires"], ["content", "Ut sapiente sed. Atque soluta aut. Nisi natus enim."], ["created_at", "2020-09-24 15:15:17.729493"], ["updated_at", "2020-09-24 15:15:17.729493"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.2ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Phlogiston selvage semiotics bespoke pour-over shabby chic mixtape readymade skateboard forage pinterest raw denim fingerstache."], ["author", "Rhode Island penguins"], ["content", "Placeat fuga fugit. Ut consectetur esse. Ipsa nam qui."], ["created_at", "2020-09-24 15:15:17.733354"], ["updated_at", "2020-09-24 15:15:17.733354"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Godard austin chia helvetica literally ugh yuccie plaid lumbersexual yr tumblr."], ["author", "Wisconsin prophets"], ["content", "Doloribus natus illum. Dolor qui recusandae. Culpa provident repellendus."], ["created_at", "2020-09-24 15:15:17.737127"], ["updated_at", "2020-09-24 15:15:17.737127"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Flexitarian tattooed you probably haven't heard of them next level food truck crucifix pop-up kombucha everyday."], ["author", "Virginia foes"], ["content", "Placeat nostrum tempore. Inventore consequatur aliquam. Asperiores delectus aut."], ["created_at", "2020-09-24 15:15:17.741441"], ["updated_at", "2020-09-24 15:15:17.741441"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Intelligentsia pop-up pitchfork flannel asymmetrical williamsburg hammock meggings mixtape vinyl."], ["author", "Colorado sheep"], ["content", "Et dolor voluptatem. Itaque deserunt nihil. Delectus optio quia."], ["created_at", "2020-09-24 15:15:17.745590"], ["updated_at", "2020-09-24 15:15:17.745590"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Letterpress direct trade cornhole taxidermy pug cray semiotics church-key paleo iphone."], ["author", "Indiana gnomes"], ["content", "Corrupti consequatur quis. Nesciunt omnis et. Ad ut enim."], ["created_at", "2020-09-24 15:15:17.751735"], ["updated_at", "2020-09-24 15:15:17.751735"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.4ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tattooed cold-pressed tilde loko ramps ugh selvage pickled bitters knausgaard sartorial."], ["author", "Maryland foxes"], ["content", "Voluptas cumque quia. Dolores perspiciatis eligendi. Libero deserunt optio."], ["created_at", "2020-09-24 15:15:17.756154"], ["updated_at", "2020-09-24 15:15:17.756154"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJoke Create (0.3ms)[0m  [1m[32mINSERT INTO "jokes" ("title", "author", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Hammock fingerstache tattooed pinterest helvetica tote bag tilde 90's goth phlogiston gentrify mumblecore 3 wolf moon."], ["author", "New Hampshire dragons"], ["content", "Ut rem illum. Harum asperiores nihil. Rem accusamus quidem."], ["created_at", "2020-09-24 15:15:17.760562"], ["updated_at", "2020-09-24 15:15:17.760562"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/jokes" for ::1 at 2020-09-24 11:15:33 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by JokesController#index as HTML
+  [1m[36mJoke Load (1.0ms)[0m  [1m[34mSELECT "jokes".* FROM "jokes"[0m
+  ↳ app/controllers/jokes_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 23.0ms | ActiveRecord: 8.2ms | Allocations: 17040)
+
+
