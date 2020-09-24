@@ -3,7 +3,7 @@ class JokesController < ApplicationController
 
   # GET /jokes
   def index
-    @jokes = Joke.all
+    @jokes = Joke.all.reverse
 
     render json: @jokes
   end
